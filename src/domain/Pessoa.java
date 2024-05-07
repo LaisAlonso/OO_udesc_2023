@@ -32,11 +32,25 @@ public class Pessoa {
     public BigDecimal getSalario() { return salario; }
     public void setSalario(BigDecimal salario) { this.salario = salario; }
 
-
     public void apresentarse(){
         System.out.println("Nome......: " + this.nome);
         System.out.println("Endereço..: " + this.endereco);
         System.out.println("Nascimento: " + this.nascimento);
         System.out.println("Salário...: " +this.salario);
     }
+
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", endereco='" + endereco + '\'' +
+                ", nascimento=" + nascimento +
+                ", salario=" + salario +
+
+                '}';
+    }
+
+
+
 }
